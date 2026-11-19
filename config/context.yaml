@@ -1,0 +1,22 @@
+# Initial project-context configuration. Consumed by a future context/indexing integration.
+version: 1
+project:
+  name: micromods-cad
+  description: Prompt-to-parameter CAD automation scaffold
+context:
+  include:
+    - src/
+    - config/
+    - README.md
+    - pyproject.toml
+  exclude:
+    - .git/
+    - .venv/
+    - __pycache__/
+    - output/
+  max_file_size_kb: 256
+  max_files: 500
+indexing:
+  enabled: false
+  provider: graphify
+  note: Enable and configure credentials when the context integration is implemented.

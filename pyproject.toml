@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "micromods-cad"
+version = "0.1.0"
+description = "CLI scaffold for converting prompts into draft 3D CAD parameters"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "micromods-cad contributors"}]
+
+[project.scripts]
+micromods-cad = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
